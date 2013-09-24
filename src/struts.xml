@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" extends="struts-default" namespace="/">
+		<action name="labelAction" class="com.steel.action.ListAction"
+			method="getList">
+			<result name="success">success.jsp</result>
+		</action>
+		<action name="attrAction" class="com.steel.action.ArrayAction">
+			<result name="success">attr.jsp</result>
+		</action>
+		<action name="mapStrAction" class="com.steel.action.MapStringAction">
+			<result name="success">mapStr.jsp</result>
+		</action>
+		<action name="mapObjAction" class="com.steel.action.MapObjectAction">
+			<result name="success">mapObj.jsp</result>
+		</action>
+		<action name="mapAttrAction" class="com.steel.action.MapAttrAction">
+			<result name="success">mapAttr.jsp</result>
+		</action>
+	</package>
+</struts>
