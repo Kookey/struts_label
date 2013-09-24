@@ -20,5 +20,8 @@
 		<action name="mapAttrAction" class="com.steel.action.MapAttrAction">
 			<result name="success">mapAttr.jsp</result>
 		</action>
+		<action name="mapListAction" class="com.steel.action.MapListAction">
+			<result name="success">maplist.jsp</result>
+		</action>
 	</package>
 </struts>
